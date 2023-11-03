@@ -1,19 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head> 
-        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
-    </head>
-    <body>
-       <!-- <img id="img" crossorigin src="https://i.imgur.com/JlUvsxa.jpg" width="227" height="227"> -->
-        <img id="img" crossorigin src="https://th.bing.com/th/id/OIP.IA4j1z2ixGF2FZOMxHPruAHaIR?pid=ImgDet&rs=1" width="227" height="227">
-        <br><br>
-        <button onclick="changeImg();">Cambiar imagen</button>
-        <br><br>
-        <div id="descripcion_img"></div>
+<head>
+    <link rel="stylesheet" href="/css/sytles.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
+</head>
+<body>
+    <div class="main-content">
+    <div class="container">
+        <h1>Image Classifier</h1>
+        <button onclick="showInstructions();">Instrucciones</button>
+        <input type="file" id="imageInput" accept="image/*" style="display: none;" onchange="displayImage();">
+        <button onclick="document.getElementById('imageInput').click();">Subir imagen</button>
+        <button onclick="classifyImage();">Clasificar imagen</button>
+        <button onclick="resetImage();">Reiniciar</button>
+        <div class="image-container">
+            <img id="img" crossorigin width="300" height="227">
+        </div>
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+        <div id="result" class="result-container"></div>
+    </div>
+</div>
 
+    <script src="/js/scripts.js"></script>
+</body>
 
-        <script src="scripts.js"></script>
-        
-    </body>
+<footer>
+    <p>&copy; 2023 Image Classifier Web App. | Made with <span class="heart">&hearts;</span> by Crypto-ch4r</p>
+</footer>
+
 </html>

@@ -1,0 +1,200 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    text-align: center;
+    margin: 20px;
+    background-color: #2A3234;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    flex: 1;
+}
+
+h1 {
+    font-size: 28px;
+    color: #f1f1ed;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el contenedor de botones */
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2A3234;
+    gap: 2rem;  /* Espacio entre botones */
+}
+
+/* Estilos para botones */
+button {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 550;
+    color: #fff;
+    background: #92959C;
+    border-radius: 5.625rem;
+    border: none;
+    padding: 0.9rem 1rem;
+    width: 12rem;
+}
+
+/* Estilos para el estado hover de botones */
+button:hover {
+    cursor: pointer;  /* Cambia el cursor a una mano al pasar el mouse */
+    background: #1c1c1e;  /* Cambia el color de fondo */
+}
+
+.image-container {
+    margin: 20px;
+}
+
+.image-container img {
+    border-radius: 0.5rem;
+    border: 1px solid #e0e0e0;
+    max-width: 100%; /* Añadido para que las imágenes no se desborden en pantallas pequeñas */
+}
+
+.progress-container {
+    width: 100%;
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0;
+    background-color: #4caf50;
+    border-radius: 4px;
+    text-align: right;
+    line-height: 20px;
+    color: #fff;
+    font-weight: bold;
+    transition: width 0.3s ease-in-out;
+}
+
+.result-container {
+    margin-top: 20px;
+    text-align: left;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.predictions-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.prediction-card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.prediction-card:hover {
+    background-color: #e0e0e0;
+}
+
+/* Estilos para el cuadro de diálogo modal */
+.modal {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 999;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.modal h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.modal p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.modal button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.modal button:hover {
+    background-color: #45a047;
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+.heart {
+    color: red;
+    font-size: 18px;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    /* Estilos para pantallas de hasta 768px de ancho */
+    .container {
+        padding: 10px; /* Reducir el espacio interno del contenedor */
+    }
+
+    .buttons {
+        gap: 1rem; /* Reducir el espacio entre botones en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Estilos para pantallas de hasta 480px de ancho (móviles) */
+    .container {
+        max-width: 90%; /* Reducir el ancho máximo del contenedor */
+    }
+
+    h1 {
+        font-size: 24px; /* Reducir el tamaño de fuente del encabezado en pantallas pequeñas */
+    }
+}
