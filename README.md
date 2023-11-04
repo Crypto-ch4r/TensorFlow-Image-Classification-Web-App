@@ -16,6 +16,17 @@ You can view a live demo of the application [here](https://imageclassifer.netlif
 - Reset the image.
 - Usage instructions.
 
+## Site screenshots
+
+![183shots_so](https://github.com/Crypto-ch4r/TensorFlow-Image-Classification-Web-App/assets/61950097/dd84ccd3-8e94-46bd-b384-94973986d144)
+<br><br>
+![160shots_so](https://github.com/Crypto-ch4r/TensorFlow-Image-Classification-Web-App/assets/61950097/48bda45d-aeea-4f2d-9d4c-62766c1075c7)
+<br><br>
+![956shots_so](https://github.com/Crypto-ch4r/TensorFlow-Image-Classification-Web-App/assets/61950097/f5d546c9-ff71-43fc-9537-3389f032cad4)
+<br><br>
+![685shots_so](https://github.com/Crypto-ch4r/TensorFlow-Image-Classification-Web-App/assets/61950097/d7b15730-fc0d-49bb-8e89-2dfd1356accb)
+
+
 ## Requirements
 
 - Web browser with support for `navigator.mediaDevices.getUserMedia` to access the camera (Google Chrome is recommended for camera functionality).
